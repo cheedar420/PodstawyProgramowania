@@ -61,7 +61,7 @@ elif b == 0 and c != 0:
         x2 = -(-(c / a) ** 0.5)
         print(f'x1 = {x1} v x2 = {x2}')
     elif -(c / a) < 0:
-        print('Nie ma rozwiązań')
+        print('nie ma rozwiązań')
 
 elif c == 0 and b != 0:
     x1 = 0
@@ -77,10 +77,10 @@ elif b != 0 and c != 0:
     elif delta == 0:
         x0 = (-b) / (2 * a)
     elif delta < 0:
-        print('Nie ma rozwiązań')
+        print('nie ma rozwiązań')
 
 else:
-    print('Nie ma rozwiązań')
+    print('nie ma rozwiązań')
 
 
 
