@@ -82,5 +82,3 @@ elif b != 0 and c != 0:
 else:
     print('nie ma rozwiązań')
 
-
-
