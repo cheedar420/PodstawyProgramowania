@@ -70,3 +70,46 @@ print(cale_zdanie2)
 napis5 = 'prawdopodobieństwo'
 ile_razy_o = napis5.count('o')
 print(ile_razy_o)
+
+#5 "mutowalność" stringów
+napis6 = "fiwyka"
+'''napis6[2] = 'z'
+print(napis6)'''
+#wniosek: string sa niemutowalne, czyli nie mozna podmieniać pojedynczych liter
+
+#6 sposob na zmutowanie stringa
+napis6_lista = list(napis6)
+print(napis6_lista)
+napis6_lista[2] = 'z'
+print(napis6_lista)
+
+napis6 = ''.join(napis6_lista)
+print(napis6)
+
+#7 długość napisu
+napis7 = 'językpolski'
+print(len(napis7))
+
+#8 powielanie stringa
+napis8 = 'informatyka'
+print((napis8 + ', ') * 3)
+
+#9 funkcje testujące cyfry i litery
+napis9 = 'qwerty'
+if napis9.isalpha() == True:
+    print('slowo sklada sie z liter')
+else:
+    print('slowo nie sklada sie liter')
+
+napis10 = '1410'
+if napis10.isdigit() == True:
+    print('slowo sklada sie z cyfr')
+else:
+    print('slowo nie sklada sie cyfr')
+
+napis10 = '1410w'
+if napis10.isalnum() == True:
+    print('slowo sklada sie z cyfr lub liter')
+else:
+    print('slowo nie sklada sie cyfr lub liter')
+
