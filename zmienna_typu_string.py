@@ -113,3 +113,42 @@ if napis10.isalnum() == True:
 else:
     print('slowo nie sklada sie cyfr lub liter')
 
+#9. Kody ASCII
+#9.1. ze znaku na kod ASCII
+print(ord('A'))
+
+#9.2. z kodu ASCII na znak
+print(chr(66))
+print(chr(ord('Z')))
+
+#10. Funkcja transalate
+slownik = str.maketrans('ąęćóźżśłń$', 'aecozzsln€')
+napis11 = 'ińfórmątyką$'
+napis11_poprawny = napis11.translate(slownik)
+print(napis11_poprawny)
+
+#11. Funkcje dużych i małych literek
+napis12 = 'KoNgO'
+napis12_tylko_duze = napis12.upper()
+print(napis12_tylko_duze)
+
+napis12_tylko_male = napis12.lower()
+print(napis12_tylko_male)
+
+#12. Podstawianie ciągu znaków
+napis13 = 'chleb kosztuje 15zł, a bułka 5zł'
+napis13_euro = napis13.replace('zł' , '€')
+print(napis13_euro)
+print(napis13)
+
+#13. Sortowanie i odwracanie napisu.
+#13.1. odwracanie
+napis14 = 'kemot'
+napis14_odwrotnie = napis14[::-1]
+print(napis14_odwrotnie)
+
+#13.2. sortowanie napisu
+napis15 = 'dbca'
+napis15_posortowany_lista = sorted(napis15)
+napis15_posortowany = ''.join(napis15_posortowany_lista)
+print(napis15_posortowany)
