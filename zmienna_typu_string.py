@@ -152,3 +152,16 @@ napis15 = 'dbca'
 napis15_posortowany_lista = sorted(napis15)
 napis15_posortowany = ''.join(napis15_posortowany_lista)
 print(napis15_posortowany)
+
+#zadanie 2.
+'''s = input('podaj napis')
+n = int(input('podaj liczbe z+'))
+
+ile_p = n // len(s)''' #// dzielenie calkowite
+'''print(s * ile_p)'''
+
+#zad 4.
+s = input('podaj napis')
+slownik = str.maketrans('aeuioy', 'AEUIOY')
+s = s.translate(slownik)
+print(s)

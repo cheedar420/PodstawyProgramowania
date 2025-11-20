@@ -36,3 +36,5 @@ else:
 
 if wynik is not None:
     print(f"wynik działania: {liczba1} {znak_dzialania} {liczba2} = {wynik}")
+
+
