@@ -54,11 +54,18 @@ for k in range(len(lista)): #range(0, 4)
     print(lista[k])
 
 #Zad 17.
-n = int(input('podaj ilość liczb'))
+'''n = int(input('podaj ilość liczb'))
 suma = 0
 
 for x in range(n):
     liczba = int(input('podaj liczbę'))
     suma = suma + liczba
 
-print(suma)
+print(suma)'''
+
+#test
+lista = [1]
+
+for i in lista:
+    print(i)
+    lista.append(i + 1)
