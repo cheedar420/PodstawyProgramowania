@@ -20,3 +20,20 @@ for i in range(n):
 print(lista)
 print(pary)
 
+# Pobieramy od użytkownika rozmiar tablicy
+n = int(input("Podaj liczbę wierszy i kolumn: "))
+
+# Zewnętrzna pętla odpowiada za wiersze
+for i in range(n):
+    # Wewnętrzna pętla odpowiada za kolumny w danym wierszu
+    for j in range(n):
+        # Obliczamy wartość jako sumę indeksów
+        wynik = i + j
+
+        # Wypisujemy wynik.
+        # end=" " sprawia, że liczby są w jednej linii.
+        # f"{wynik:<3}" dba o równe odstępy (wyrównanie do 3 znaków).
+        print(f"{wynik:<3}", end=" ")
+
+    # Po wypisaniu wszystkich kolumn w wierszu, przechodzimy do nowej linii
+    print()
