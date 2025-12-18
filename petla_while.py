@@ -65,7 +65,7 @@ while liczba > 0:
     print(cyfra, end = '')'''
 
 #zad 8
-liczba = int(input('podaj liczbe'))
+'''liczba = int(input('podaj liczbe'))
 d = 2
 ileczyn = 0
 ilerczyn = 0
@@ -78,3 +78,39 @@ while liczba > 1:
     d += 1
 print(ileczyn)
 print(ilerczyn)
+'''
+from random import randint
+#zad 5
+x, y = 0, 0
+ruchy= ['p'] * 10 + ['d'] * 5 + ['l'] * 5 + ['g'] * 10 + ['q']
+
+while True:
+    #ruch = input('podaj ruch(g,d,l,p) - aby zakończyć (q): ')
+    ruch = ruchy[randint(0, len(ruchy) - 1)]
+    if ruch == 'q':
+        print('koniec gry')
+        break
+    elif ruch == 'g':
+        if y < 9:
+            y += 1
+        else:
+            print('ruch niemożliwy')
+    elif ruch == 'd':
+        if y > 0:
+            y -= 1
+        else:
+            print('ruch niemożliwy')
+    elif ruch == 'l':
+        if x > 0:
+            x -= 1
+        else:
+            print('ruch niemożliwy')
+    elif ruch == 'p':
+        if x < 9:
+            x += 1
+        else:
+            print('ruch niemożliwy')
+    else:
+        print('nieznany ruch')
+    print(f'({x}, {y})')
+    time.sleep(0.5)
