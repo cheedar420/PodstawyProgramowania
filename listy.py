@@ -33,3 +33,27 @@ print(lista4)
 lista9 = [0] * 1000
 '''lista10 = [lista9] * 1000
 print(lista10)'''
+
+#Sortowanie i odwracanie listy
+lista10 = [9,3,5,6,2]
+#lista10.sort()
+lista10.reverse()
+print(lista10)
+
+#Wyrażenia listowe/listy składane
+lista11 = list(range(1, 11))
+lista11kwadraty = [x ** 2 for x in lista11 if x % 2 == 0]
+print(lista11kwadraty)
+
+#Usuwanie elementów listy:
+#na bazie jego wartości
+lista12 = [2,9,3,4,5,2,2]
+#lista12.remove(4)
+while 2 in list12:
+    lista12.remove(2)
+print(lista12)
+
+#na bazie indeksu
+lista13 = [5,1,8,3,9,10]
+del lista13[2] #indeks 2
+print(lista13)
