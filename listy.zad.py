@@ -34,3 +34,24 @@ while 2 in lista1:
     lista1.remove(2)
 
 lista1 = [x for x in lista1 if x!= 2]
+
+#j
+'''lista3 = [x ** 2 for x in lista1]'''
+
+lista3 = []
+for x in lista1:
+    lista3.append(x ** 2)
+print(lista3)
+
+#k
+lista = [178,192, 184, 182, 180, 179, 186, 190, 191,191]
+xmin= min(lista)
+xmax = max(lista)
+
+listanorm = [(x - xmin) / (xmax - xmin) for x in lista]
+print(listanorm)
+
+#l
+lista = [123, 89, 5600, 432, 11, 45,900, 12450,1410, 390, 9999]
+lidts  = [ for x in lista if x < 1000 or x  > 9999]
+           ]
