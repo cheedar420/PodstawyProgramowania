@@ -1,4 +1,4 @@
-lista2d = [
+'''lista2d = [
     [5,2,8,5,1],
     [3,8,2,9,5],
     [1,4,4,2,7],
@@ -27,4 +27,57 @@ for x in range(len(lista2d)):
 
 lista1dzbior = set(lista1d)
 for e in lista1dzbior:
-    print(e, lista1d.count(e))
+    print(e, lista1d.count(e))'''
+
+slowa = [
+"LETTER",
+"BALLOON",
+"SUCCESS",
+"HAPPY",
+"COFFEE",
+"BOOKKEEPER",
+"ASSESS",
+"MISSISSIPPI",
+"ADDRESS",
+"TOOLBOX"
+]
+ilosc = []
+slowaset = set(slowa)
+lslowa = len(slowaset)
+for i in range(lslowa):
+    iset = list(slowaset)[i]
+    iiset = set(iset)
+    liczba = len(iiset)
+    ilosc.append(liczba)
+print(ilosc)
+
+maxx = ''
+maxlrl = 0
+for x in slowa:
+    xbior = set(x)
+    lrl = len(xbior)
+    if lrl > maxlrl:
+        maxlrl = lrl
+        maxx = x
+print(maxx)
+
+#sp 2
+
+maxslowo = max(slowa, key = lambda x: len(set(x)))
+print(maxslowo)
+
+#zad 2.2
+
+
+zbior = set()
+for x in slowa:
+    for y in x:
+        zbior.add(y)
+print(zbior)
+
+for l in zbior:
+    lista = []
+    for s in slowa:
+        if l in s:
+            lista.append(s)
+    print(f'{l}: {lista}')
