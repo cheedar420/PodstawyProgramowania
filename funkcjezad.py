@@ -52,13 +52,33 @@ liczby = ['123', '56', '7890', '59', '456', '822']
 listaliczb = list(map(int, liczby))
 print(sum(listaliczb))
 
-#zad4
+'''#zad4
 suma = 0
-lista2d =
+lista2d = []
 for i in range(len(lista2d)):
     element = lista2d[i][i]
     suma+= element
 print(suma)
 
-f = fghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfgh
+f = fghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfgh'''
  #2. 4 2.5 2.6 2.7 2.8
+
+def ile_cyfr(liczba):
+    licznik = 0
+    if liczba < 0:
+        liczba *= -1
+    while liczba > 0:
+        liczba = liczba // 10
+        licznik += 1
+    return licznik
+
+print(ile_cyfr(---127))
+
+def unikaty(l1, l2):
+    zbior = set()
+    l = l1 + l2
+    for x in l:
+        if l.count(x) == 1:
+            zbior.add(x)
+    return zbior
+print(unikaty([1,2,3,4],[2,3,4]))
